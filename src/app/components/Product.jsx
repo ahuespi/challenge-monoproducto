@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "./Modal";
 
 const Product = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModalHandler = () => {
+    setShowModal(true);
+  };
   return (
     <div className="w-[1185px] mx-auto">
       <div className={`interest text-[13px] my-5`}>
@@ -38,23 +44,41 @@ const Product = () => {
           </div>
         </div>
         <div className={`content bg-white p-5 flex mt-3`}>
-          <div className={`thumbnail w-[5%] p-2`}>
+          <div className={`thumbnail w-[7%] p-2`}>
             <ul className="flex flex-col">
-              <li className="border border-gray-300 rounded-md py-2 px-4 mb-2">
-                <img src="/teclado-img.png" alt="Teclado" />
+              <li className="flex justify-center border border-gray-300 rounded-md  mb-2">
+                <img
+                  className={`w-[40px] h-[40px] max-w-none`}
+                  src="/teclado-img.png"
+                  alt="Teclado"
+                />
               </li>
-              <li className="border border-gray-300 rounded-md py-2 px-4 mb-2">
-                <img src="/teclado-img.png" alt="Teclado" />
+              <li className="flex justify-center border border-gray-300 rounded-md  mb-2">
+                <img
+                  className={`w-[40px] h-[40px] max-w-none`}
+                  src="/teclado-img.png"
+                  alt="Teclado"
+                />
               </li>
-              <li className="border border-gray-300 rounded-md py-2 px-4 mb-2">
-                <img src="/teclado-img.png" alt="Teclado" />
+              <li className="flex justify-center border border-gray-300 rounded-md  mb-2">
+                <img
+                  className={`w-[40px] h-[40px] max-w-none`}
+                  src="/teclado-img.png"
+                  alt="Teclado"
+                />
               </li>
-              <li className="border border-gray-300 rounded-md py-2 px-4 mb-2">
-                <img src="/teclado-img.png" alt="Teclado" />
+              <li className="flex justify-center border border-gray-300 rounded-md  mb-2">
+                <img
+                  className={`w-[40px] h-[40px] max-w-none`}
+                  src="/teclado-img.png"
+                  alt="Teclado"
+                />
               </li>
             </ul>
           </div>
-          <div className={`product__image w-[35%] p-2`}>
+          <div
+            className={`product__image w-[33%] p-2 flex flex-col justify-center`}
+          >
             <img src="/teclado-img.png" alt="Teclado" />
           </div>
           <div className={`product__info w-[30%] p-2`}>
@@ -82,6 +106,16 @@ const Product = () => {
                 Ver los medios de pago
               </span>
             </div>
+            <div className="mb-5 font-bold">
+              Experimentá nuestra nueva experiencia de compra haciendo clic{" "}
+              <a
+                className="text-blue-500 pointer"
+                onClick={() => openModalHandler()}
+              >
+                aqui
+              </a>
+            </div>
+            <Modal onClose={() => setShowModal(false)} show={showModal}></Modal>
             <div className={`info__description mb-3`}>
               <span className={`text-[13px] font-bold`}>
                 Lo que tenés que saber de este productos

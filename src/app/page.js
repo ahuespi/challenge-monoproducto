@@ -13,7 +13,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="w-full bg-[#ededed]">
+    <div className="w-full h-screen bg-[#ededed]">
       <Header />
       <Product />
       <Modal onClose={() => setShowModal(false)} show={showModal}></Modal>
