@@ -15,8 +15,8 @@ const Modal = ({ show, onClose, children, title }) => {
   };
 
   const modalContent = show ? (
-    <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-[#00000080]">
-      <div className="bg-white w-[1000px] rounded-[15px] p-[45px] relative">
+    <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-[#00000080] overflow-hidden">
+      <div className="bg-white top-[1px] bottom-[20px] w-[1000px] rounded-[15px] p-[25px] relative">
         <div className="flex justify-end text-[25px] absolute right-5 top-4">
           <a href="#" onClick={handleCloseClick}>
             x

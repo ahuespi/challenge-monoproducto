@@ -12,7 +12,6 @@ const ProductExperience = () => {
   const [selectSwitches, setSelectSwitches] = useState();
 
   useEffect(() => {
-    console.log(`Actualiza a: ${selectSwitches}`);
     const play = () => {
       switch (selectSwitches) {
         case "Blue":
@@ -99,22 +98,33 @@ const ProductExperience = () => {
 
       <div className="mt-3 flex justify-between mx-auto w-[77%]">
         <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="border hover:bg-blue-700 text-black py-2 px-4 rounded border-dotted border-black"
           onClick={() => selectSound("Blue")}
         >
           Switches Blue
         </button>
         <button
-          className="bg-red-900 hover:bg-red-900 text-white font-bold py-2 px-4 rounded"
+          className="border hover:bg-red-900 text-black py-2 px-4 rounded border-dotted border-black"
           onClick={() => selectSound("Brown")}
         >
           Switches Brown
         </button>
         <button
-          className="bg-red-500 hover:bg-red-500 text-white font-bold py-2 px-4 rounded"
+          className="border hover:bg-red-500 text-black py-2 px-4 rounded border-dotted border-black"
           onClick={() => selectSound("Red")}
         >
           Switches Red
+        </button>
+      </div>
+
+      <div className="buy__buttons mt-3">
+        <button className="w-[90%] mb-3 bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <a classname="block" href="https://www.mercadopago.com.ar">
+            Comprar ahora
+          </a>
+        </button>
+        <button class="w-[90%] bg-transparent hover:bg-blue-400 text-blue-400 font-semibold hover:text-white py-2 px-4 border border-blue-400 hover:border-transparent rounded">
+          Agregar al carrito
         </button>
       </div>
 
