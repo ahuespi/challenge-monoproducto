@@ -91,8 +91,9 @@ const ProductExperience = () => {
 
       <h3 className="mt-[30px]">
         <p>
-          Hace clic sobre el switch que quieras probar y usá tu teclado para
-          escuchar como sonaría los switches elegidos...
+          Hace clic sobre el switch que quieras probar y{" "}
+          <strong>usá tu teclado</strong> para escuchar como sonaría los
+          switches elegidos...
         </p>
       </h3>
 
