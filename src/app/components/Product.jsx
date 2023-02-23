@@ -36,8 +36,8 @@ const Product = () => {
           </div>
           <div className={`breabcrumb__right `}>
             <ul className="flex justify-end">
-              <li className="text-[13px] mr-5 text-blue-500">Compartir</li>
-              <li className="text-[13px] mr-5 text-blue-500">
+              <li className="text-[13px] ml-5 text-blue-500">Compartir</li>
+              <li className="text-[13px] ml-5 text-blue-500">
                 Vender uno igual
               </li>
             </ul>
