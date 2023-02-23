@@ -74,7 +74,7 @@ const ProductExperience = () => {
       </h1>
       <div className="text-left mx-auto w-[77%] mt-5">
         <p>
-          Estas cansado de no saber como suena los switch y tenes que ir a
+          ¿Estas cansado de no saber como suena los switch y tenes que ir a
           buscar videos a youtube?
         </p>
         <p>
